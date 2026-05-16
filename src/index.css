@@ -1,0 +1,148 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+  color: white;
+  min-height: 100vh;
+}
+
+/* GLASS EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav h2 {
+  background: linear-gradient(45deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ec4899;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  background: linear-gradient(90deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 20px;
+  color: #cbd5e1;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 25px;
+  padding: 12px 28px;
+  background: linear-gradient(45deg, #a855f7, #ec4899);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #a855f7;
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* SECTION TITLE */
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #e879f9;
+}
+
+/* CARDS */
+.card {
+  width: 70%;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(168, 85, 247, 0.4);
+}
+
+/* SKILLS GRID */
+#skills .skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  padding: 10px 18px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  color: #cbd5e1;
+}
