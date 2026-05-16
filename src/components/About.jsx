@@ -7,7 +7,7 @@ function About() {
         applications using React.
       </p>
       <h1>
-        dummyyyy
+        
       </h1>
     </section>
   );
